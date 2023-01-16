@@ -1,7 +1,5 @@
 # svg-editor
 
-A simple SVG editor made for an Uni project.
-
 Functionalities:
 
 Lines, Rectangles, and Elipses with different sizes and colors can be added, selected and moved along the page.
