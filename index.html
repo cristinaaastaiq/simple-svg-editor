@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Orbitron:wght@600&family=Poppins&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <script
+      src="https://kit.fontawesome.com/2bb6358547.js"
+      crossorigin="anonymous"
+    ></script>
+    <title>SVG Editor</title>
+    <h1 id="title">SVG Editor</h1>
+  </head>
+  <body>
+    <div id="container">
+      <div class="functionalities">
+        <button class="choice" id="select">
+          <i class="fa-solid fa-arrow-pointer"></i>
+        </button>
+        <button class="choice" id="line">
+          <i class="fa-solid fa-minus"></i>
+        </button>
+        <button class="choice" id="rectangle">
+          <i class="fa-solid fa-square"></i>
+        </button>
+        <button class="choice" id="circle">
+          <i class="fa-solid fa-circle"></i>
+        </button>
+        <button class="choice" id="text">
+          <i class="fa-solid fa-font"></i>
+        </button>
+        <button class="choice" id="delete">
+          <i class="fa-solid fa-trash"></i>
+        </button>
+        <button class="choice" id="export">
+          <i class="fa-solid fa-file-export"></i>
+        </button>
+        <button class="choice" id="save">
+          <i class="fa-solid fa-download"></i>
+        </button>
+      </div>
+
+      <svg id="svg" xmlns="http://www.w3.org/2000/svg" >
+
+      <div id="details">
+        <h4 class="details-name" id="details-form-name"></h4>
+        <div id="form-details">
+          <div class="card" id="form-x-coordinates">
+            <p class="input-label">X</p>
+            <input class="input" id="x-form" type="number" value="10" />
+          </div>
+          <div class="card" id="form-y-coordinates">
+            <p class="input-label">Y</p>
+            <input class="input" id="y-form" type="number" value="10" />
+          </div>
+          <div class="card" id="form-width">
+            <p class="input-label">Width</p>
+            <input class="input" id="width-form" type="number" value="50" />
+          </div>
+          <div class="card" id="form-height">
+            <p class="input-label">Height</p>
+            <input class="input" id="height-form" type="number" value="50" />
+          </div>
+          <div class="card" id="form-bg-color">
+            <p class="input-label">Color</p>
+            <input class="input" id="color-form" type="color" value="#06283D" />
+          </div>
+          <div class="card" id="form-rotation">
+            <p class="input-label">Rotation</p>
+            <input class="input" id="rotation-form" type="number" value="0" />
+          </div>
+        </div>
+
+        <h4 class="details-name">Stroke</h4>
+        <div id="stroke-details">
+          <div class="card2" id="stroke-width">
+            <p class="input-label">Width</p>
+            <input class="input" id="width-stroke" type="number" value="4" />
+          </div>
+          <div class="card2" id="stroke-color">
+            <p class="input-label">Color</p>
+            <input class="input" id="color-stroke" type="color" value="#06283D" />
+          </div>
+        </div>
+      </div>
+    </div>
+    
+    <script src="script.js"></script>
+  </body>
+</html>
